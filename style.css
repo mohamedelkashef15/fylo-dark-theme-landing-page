@@ -117,7 +117,8 @@ a {
 /* header end */
 /* Section 1 Start */
 #section-1,
-#seciton-2 {
+#seciton-2,
+#seciton-3 {
   background-color: var(--bg-main);
   color: #fff;
   padding: 5rem 0;
@@ -167,3 +168,50 @@ a {
 }
 
 /* Section 2 End */
+/* Section 3 start */
+#seciton-3 {
+  background-image: url("./images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-position: 10% 14%;
+}
+
+#seciton-3 .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+#seciton-3 .row .col {
+  background-color: var(--bg-testimonials);
+  padding: 2rem;
+  position: relative;
+}
+
+#seciton-3 .quote {
+  position: absolute;
+  top: -30px;
+  left: -10px;
+}
+
+#seciton-3 .row .col .user {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#seciton-3 .row .col .user img {
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#seciton-3 .row .col .user h3 {
+  font-size: 12px;
+}
+
+#seciton-3 .row .col .user p {
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+/* Section 3 End */
