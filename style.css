@@ -36,6 +36,12 @@ body {
   height: 5000px;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
 ul {
   list-style: none;
 }
@@ -74,6 +80,7 @@ a {
 #header .navbar ul li a {
   margin: 0 25px;
   color: #fff;
+  font-family: 'Raleway', sans-serif;
 }
 
 #header .header-content {
@@ -85,7 +92,6 @@ a {
 }
 
 #header .header-content h1 {
-  font-family: 'Raleway', sans-serif;
   font-size: 35px;
   line-height: 1.5;
   margin: 3rem 0 1rem;
@@ -105,15 +111,16 @@ a {
   border-radius: 50px;
   background-image: linear-gradient(to right, var(--blue), var(--cyan));
   color: #fff;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* header end */
 /* Section 1 Start */
-#section-1 {
+#section-1,
+#seciton-2 {
   background-color: var(--bg-main);
   color: #fff;
-  padding: 4rem 0;
-  text-align: center;
+  padding: 5rem 0;
 }
 
 #section-1 .row {
@@ -122,6 +129,7 @@ a {
   gap: 3rem 7rem;
   max-width: 800px;
   margin: auto;
+  text-align: center;
 }
 
 #section-1 .row .col h3 {
@@ -130,3 +138,32 @@ a {
 }
 
 /* Section 1 End */
+/* Section 2 Start */
+#seciton-2 .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  align-items: center;
+
+}
+
+#seciton-2 .row .seciton-content h2 {
+  font-size: 36px;
+}
+
+#seciton-2 .row .seciton-content p {
+  margin: 20px 0;
+}
+
+#seciton-2 .row .seciton-content a {
+  color: var(--cyan);
+  border-bottom: 1px solid var(--cyan);
+  padding-bottom: 2px;
+}
+
+#seciton-2 .row .seciton-content a img {
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+/* Section 2 End */
