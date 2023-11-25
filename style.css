@@ -66,7 +66,6 @@ a {
   background-image: linear-gradient(to right, var(--blue), var(--cyan));
   color: #fff;
   font-family: 'Raleway', sans-serif;
-  transition: all 0.3s ease;
   /* for button */
   border: none;
   cursor: pointer;
@@ -80,7 +79,7 @@ a {
 #header {
   background: url("./images/bg-curvy-desktop.svg") no-repeat bottom/contain;
   background-color: var(--bg-secondary);
-  min-height: 150vh;
+
 }
 
 #header .navbar {
@@ -114,6 +113,12 @@ a {
   padding: 5rem 0;
 }
 
+#header .header-content img,
+#seciton-2 .row img {
+  /* for responsive */
+  max-width: 100%;
+}
+
 #header .header-content h1 {
   font-size: 35px;
   line-height: 1.5;
@@ -131,7 +136,7 @@ a {
 #section-1,
 #seciton-2 {
   background-color: var(--bg-main);
-  padding: 5rem 0;
+  padding: 5rem 2rem;
 }
 
 #section-1 .row {
@@ -172,9 +177,15 @@ a {
   padding-bottom: 2px;
 }
 
-#seciton-2 .row .seciton-content a img {
+#seciton-2 .row .seciton-content a i {
+  font-size: 10px;
   vertical-align: middle;
-  margin-left: 2px;
+  margin-left: 5px;
+}
+
+#seciton-2 .row .seciton-content a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 /* Section 2 End */
@@ -182,7 +193,7 @@ a {
 #seciton-3 {
   background-image: url("./images/bg-quotes.png");
   background-repeat: no-repeat;
-  background-position: 10% 12%;
+  background-position: 10% 8%;
   background-color: var(--bg-main);
   padding: 5rem 0 20rem;
 }
@@ -221,7 +232,7 @@ a {
 
 /* Section 3 End */
 /* Footer start */
-/* section start */
+/* sign up start */
 #footer {
   background-color: var(--bg-footer);
   padding-bottom: 5rem;
@@ -258,11 +269,10 @@ a {
 }
 
 #form .btn {
-  background-color: red;
   width: 30%;
 }
 
-/* section end */
+/* sign up end */
 
 /* Footer content start */
 #footer .row {
@@ -313,3 +323,55 @@ a {
 
 /* Footer content end */
 /* Footer end */
+
+/* Responsive Start */
+@media (max-width: 700px) {
+
+  #header .navbar img {
+    width: 80px;
+  }
+
+  #header .navbar ul li a {
+    margin: 0 10px;
+  }
+
+  #section-1 .row {
+    grid-template-columns: 1fr;
+  }
+
+  #seciton-2 .row,
+  #seciton-3 .row {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  #seciton-2 .row .seciton-content h2 {
+    font-size: 25px;
+  }
+
+  #seciton-3 {
+    background-position: 10% 4%;
+  }
+
+  #footer .sign-up h2 {
+    font-size: 22px;
+  }
+
+  #form input,
+  #form .btn {
+    display: block;
+    width: 100%;
+  }
+
+  #footer .sign-up {
+    padding: 3rem 2rem;
+  }
+
+  #footer .row {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+}
+
+/* Responsive End */
