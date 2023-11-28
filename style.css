@@ -161,11 +161,11 @@ a {
   grid-template-columns: 1fr 1fr;
   column-gap: 5rem;
   align-items: center;
-
 }
 
 #seciton-2 .row .seciton-content h2 {
   font-size: 36px;
+  max-width: 80%;
 }
 
 #seciton-2 .row .seciton-content p {
